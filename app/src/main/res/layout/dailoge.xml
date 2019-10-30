@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="@dimen/_260sdp"
+android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sdd"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Gender"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="45sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_6sdp"
+            android:background="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_25sdp">
+
+
+            <LinearLayout
+                android:layout_width="@dimen/_140sdp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:background="#fff"
+                    android:src="@drawable/icm" />
+
+                <Button
+                    android:id="@+id/male"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+
+
+                    android:background="@drawable/bt_shape"
+                    android:stateListAnimator="@drawable/state_list_animator_z"
+                    android:text="Male"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="#fff"
+
+                    android:src="@drawable/icf" />
+                <Button
+                    android:id="@+id/female"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="@dimen/_15sdp"
+
+
+                    android:background="@drawable/bt_shape"
+                    android:stateListAnimator="@drawable/state_list_animator_z"
+                    android:text="Female"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp" />
+
+
+
+    </LinearLayout>
+
+ </LinearLayout>

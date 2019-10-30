@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.finalstitch.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_price"
+        android:name="com.example.finalstitch.ui.gallery.GalleryFragment"
+        android:label="Price"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_mdesigns"
+        android:name="com.example.finalstitch.ui.Mdesigns.MaledesignsFragment"
+        android:label="@string/design"
+        tools:layout="@layout/maledesigns_fragment" />
+
+    <fragment
+        android:id="@+id/nav_morder"
+        android:name="com.example.finalstitch.ui.Orders.MaleOrder.ForOrderMFragment"
+        android:label="Order"
+        tools:layout="@layout/fragment_for_order_m" />
+
+
+    <fragment
+        android:id="@+id/nav_forder"
+        android:name="com.example.finalstitch.ui.Orders.FemaleOrder.ForOrderFFragment"
+        android:label="Order"
+        tools:layout="@layout/fragment_for_order_f" />
+
+    <fragment
+        android:id="@+id/nav_fdesigns"
+        android:name="com.example.finalstitch.ui.Fdesigns.FemaleDesignsFragment"
+        android:label="@string/design"
+        tools:layout="@layout/female_designs_fragment" />
+
+    <fragment
+        android:id="@+id/nav_fchat"
+        android:name="com.example.finalstitch.ui.Chats.FemaleChat.FemaleChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/female_designs_fragment" />
+
+    <fragment
+        android:id="@+id/nav_mchat"
+        android:name="com.example.finalstitch.ui.Chats.MaleChat.MaleChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/female_designs_fragment" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.finalstitch.ui.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+</navigation>
