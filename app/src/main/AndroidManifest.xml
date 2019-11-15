@@ -9,9 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BigActivity"
-            android:label=""
+        <activity android:name=".CustomActivity"
             android:parentActivityName=".MaleActivity"></activity>
+        <activity android:name=".AdultActivity"
+
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MaleActivity"
+            android:label=""></activity>
+        <activity android:name=".KidsActivity"
+
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MaleActivity"
+            android:label=""></activity>
+        <activity
+            android:name=".BigActivity"
+            android:label=""
+            android:parentActivityName=".MaleActivity" />
         <activity
             android:name=".SelectionActivity"
             android:screenOrientation="portrait" />
@@ -37,7 +50,7 @@
             android:label="Order"
             android:parentActivityName=".SelectionActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

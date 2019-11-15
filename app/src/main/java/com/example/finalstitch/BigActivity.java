@@ -30,7 +30,10 @@ public class BigActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                int radioId=radioGroup.getCheckedRadioButtonId();
+                Intent i = new Intent(BigActivity.this,MainActivity.class);
+                //i.putExtra("two",1);
+                startActivity(i);
+              /*  int radioId=radioGroup.getCheckedRadioButtonId();
 
                 radioButton=findViewById(radioId);
 
@@ -45,7 +48,7 @@ public class BigActivity extends AppCompatActivity {
                 {
                     Toast.makeText(BigActivity.this,"You have Selected " +radioButton.getText()+"size"+" and your order has been placed",Toast.LENGTH_LONG).show();
 
-                }
+                }*/
             }
         });
         if (im==1) {
